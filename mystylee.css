@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  }
+  body
+  {
+      background-color: black;
+  }
+  .button1{
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      justify-content: space-between;
+      top: 0;
+  }
+  .button2{
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      justify-content: space-between;
+      bottom: -310px;
+  }
+  .button {
+      background-color: #404240;
+      border: solid;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      /* display: inline-block; */
+      font-size: 20px;
+      /* gap: 20px; */
+      cursor: pointer;
+      width: 302px;
+    }
+    .button:hover
+    {
+      background-color: white;
+      color: black;
+      transition-duration: 0.5s;
+    }
+  
+    /* circle */
+    .circle
+    {
+      border-radius: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      transform: translate(170%,35%);
+      width: 350px;
+      height: 350px;
+      animation: cc 5s infinite;
+    }
+    .circle:hover
+    {
+      border-radius: 20px;
+      transition-duration: 2s;
+    }
+    @keyframes cc
+    {
+      0%
+      {
+         background-color: yellow;
+      }
+      25%
+      {
+         background-color: rgb(179, 41, 179);
+      }
+      50%
+      {
+         background-color: orange;
+      }
+      75%
+      {
+         background-color: white;
+      }
+      100%
+      {
+         background-color: red;
+      }
+    }
+    @media screen and (max-width:320px)
+    {
+      .button
+      {
+          width: 10px;
+          /* font-size: px; */
+          padding: 15px 52px 0px 9px;
+          
+      }
+      .button1{
+          justify-content: center;
+          gap: 5px;
+      }
+      .button2
+      {
+          bottom: -250px;
+      }
+      .circle
+      {
+         transform: translate(32%,60%);
+         width: 200px;
+         height: 200px;
+      }
+    }
